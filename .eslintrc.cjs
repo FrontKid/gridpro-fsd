@@ -8,13 +8,17 @@ module.exports = {
     'node_modules/**',
     'tsconfig.json',
     'vite.config.ts',
+    'sass.config.js',
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
   rules: {
+    'import/extensions': 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
+    'object-curly-newline': ['error', { multiline: true, consistent: true }],
+    'implicit-arrow-linebreak': 'off',
   },
 };
