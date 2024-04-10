@@ -1,0 +1,33 @@
+@use '../../../../app/styles/helpers/functions.scss';
+@use '../../../../app/styles/helpers/variables.scss';
+
+.hero {
+  background-image: url('/images/Hero-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100dvh;
+
+  padding: functions.to-rem(160) 0 functions.to-rem(134) 0;
+  color: variables.$white;
+}
+
+.service {
+  padding: functions.to-rem(120) 0 functions.to-rem(72) 0;
+}
+
+.condition {
+  padding: functions.to-rem(112) 0;
+  color: variables.$black;
+}
+
+.ourMission {
+  padding-top: functions.to-rem(120);
+  padding-bottom: functions.to-rem(109);
+}
+
+.contactUs {
+  padding-top: functions.to-rem(80);
+  padding-bottom: functions.to-rem(160);
+}

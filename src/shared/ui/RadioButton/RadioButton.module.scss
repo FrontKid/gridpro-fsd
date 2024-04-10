@@ -1,0 +1,49 @@
+@use '../../../app/styles/helpers/functions.scss';
+@use '../../../app/styles/helpers/variables.scss';
+
+.lable {
+  display: inline-flex;
+  align-items: center;
+  gap: functions.to-rem(8);
+  cursor: pointer;
+}
+
+.input {
+  display: none;
+}
+
+.customRadio {
+  cursor: pointer;
+  display: inline-block;
+  width: functions.to-rem(24);
+  height: functions.to-rem(24);
+  border-radius: 50%;
+  background-color: variables.$white;
+  border: functions.to-rem(1) solid variables.$grey;
+  position: relative;
+
+  &::before {
+    content: '';
+
+    width: functions.to-rem(16);
+    height: functions.to-rem(16);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: variables.$blue;
+    border-radius: 50%;
+
+    display: none;
+  }
+}
+
+.input:checked + .customRadio::before {
+  display: block;
+}
+
+.input:checked + .customRadio {
+  border-color: variables.$blue;
+}

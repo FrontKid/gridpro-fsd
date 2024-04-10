@@ -1,0 +1,92 @@
+@use '../../../../app/styles/helpers/functions.scss';
+@use '../../../../app/styles/helpers/variables.scss';
+
+.form {
+  margin-top: functions.to-rem(120);
+}
+
+.leftBlock {
+  width: 100%;
+  max-width: functions.to-rem(470);
+}
+.questionBlock {
+  &:not(:last-child) {
+    margin-bottom: functions.to-rem(30);
+  }
+
+  & > span {
+    font-weight: 500;
+    display: block;
+    margin-bottom: functions.to-rem(8);
+  }
+
+  & span:last-child {
+    width: functions.to-rem(96);
+  }
+}
+.secondary {
+  font-size: functions.to-rem(12);
+  color: variables.$grey-md;
+}
+
+.relatedDamage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: functions.to-rem(16);
+  width: 100%;
+  & span:last-child {
+    width: initial;
+  }
+  .specifyRadio {
+    display: flex;
+    width: 100%;
+  }
+
+  .specifyRadioText {
+    color: variables.$grey-md;
+  }
+
+  .specifyInput {
+    flex-grow: 1;
+  }
+}
+
+.yesNoInner {
+  & span:last-child {
+    width: functions.to-rem(56);
+  }
+}
+
+.rightBlock {
+  max-width: functions.to-rem(505);
+  width: 100%;
+
+  .yesNoIdkInner {
+    & span:last-child {
+      width: functions.to-rem(56);
+    }
+  }
+
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-size: functions.to-rem(18);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: functions.to-rem(24);
+  }
+}
+.personalInfo {
+  position: relative;
+  padding-bottom: functions.to-rem(66);
+  label:not(:last-child) {
+    margin-bottom: functions.to-rem(24);
+    display: block;
+  }
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: functions.to-rem(160);
+}

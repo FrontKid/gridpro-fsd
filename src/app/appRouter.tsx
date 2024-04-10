@@ -14,6 +14,22 @@ const routes: RouteObject[] = [
         element: <HomePage />,
       },
       {
+        path: 'about',
+        element: <h1>Comming soon...</h1>,
+      },
+      {
+        path: 'services',
+        element: <h1>Comming soon...</h1>,
+      },
+      {
+        path: 'terms',
+        element: <h1>Comming soon...</h1>,
+      },
+      {
+        path: 'privacy',
+        element: <h1>Comming soon...</h1>,
+      },
+      {
         path: '*',
         element: <h1>Ooops...</h1>,
       },

@@ -1,0 +1,29 @@
+@use '../../../../../../app/styles/helpers/functions.scss';
+@use '../../../../../../app/styles/helpers/variables.scss';
+
+.card {
+  background-color: variables.$blue-md;
+  max-width: functions.to-rem(400);
+  min-height: functions.to-rem(256);
+  padding: functions.to-rem(48) functions.to-rem(24) functions.to-rem(24)
+    functions.to-rem(24);
+  border-radius: functions.to-rem(24);
+
+  position: relative;
+}
+
+.title {
+  font-size: functions.to-rem(28);
+  line-height: 1.2;
+}
+
+.text {
+  color: variables.$secondary;
+}
+
+.image {
+  position: absolute;
+  top: functions.to-rem(24);
+  right: functions.to-rem(24);
+  width: functions.to-rem(40);
+}

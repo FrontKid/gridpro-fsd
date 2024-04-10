@@ -1,14 +1,10 @@
-import { configureStore, createSlice } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
+import { pillCardSlice } from '@/entities/pill-card/model/slice';
 
 const makeStore = () => {
   const store = configureStore({
     reducer: {
-      // ! test only - must be remove
-      test: createSlice({
-        name: 'test',
-        initialState: {},
-        reducers: {},
-      }).reducer,
+      pillCard: pillCardSlice.reducer,
     },
   });
 

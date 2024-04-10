@@ -1,0 +1,15 @@
+@use '../../../app/styles/helpers/functions.scss' as functions;
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  column-gap: functions.to-rem(64);
+}
+
+.column {
+  flex-direction: column;
+  row-gap: functions.to-rem(32);
+}

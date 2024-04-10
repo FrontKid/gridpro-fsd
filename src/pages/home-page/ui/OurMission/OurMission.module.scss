@@ -1,0 +1,25 @@
+@use '../../../../app/styles/helpers/functions.scss';
+@use '../../../../app/styles/helpers/variables.scss';
+
+.content {
+}
+
+.title {
+  text-align: center;
+  margin-bottom: functions.to-rem(32);
+}
+
+.text {
+  font-size: functions.to-rem(24);
+  margin-bottom: functions.to-rem(40);
+}
+.imageInner {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+    display: block;
+    max-width: functions.to-rem(611);
+  }
+}

@@ -1,0 +1,30 @@
+@use '../../../../app/styles/helpers/functions.scss';
+@use '../../../../app/styles/helpers/variables.scss';
+
+.footer {
+  padding-block: functions.to-rem(120);
+  color: variables.$white;
+  font-size: functions.to-rem(18);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  margin-bottom: functions.to-rem(140);
+}
+
+.listTitle {
+  font-size: functions.to-rem(28);
+  margin-bottom: functions.to-rem(40);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: functions.to-rem(32);
+}

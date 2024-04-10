@@ -1,0 +1,36 @@
+@use '../../../../app/styles/helpers/functions.scss';
+@use '../../../../app/styles/helpers/variables.scss';
+
+.title {
+  text-align: center;
+  margin-bottom: functions.to-rem(32);
+}
+
+.text {
+  text-align: center;
+  margin-bottom: functions.to-rem(40);
+}
+.cardInner {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  color: variables.$white;
+  font-size: functions.to-rem(18);
+  max-width: functions.to-rem(611);
+  border-radius: functions.to-rem(24);
+  background-color: variables.$blue-md;
+  padding-block: functions.to-rem(60);
+  flex-grow: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .contentInner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: functions.to-rem(8);
+  }
+}

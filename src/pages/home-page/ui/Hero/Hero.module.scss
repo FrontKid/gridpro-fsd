@@ -1,0 +1,30 @@
+@use '../../../../app/styles/helpers/functions.scss';
+@use '../../../../app/styles/helpers/variables.scss';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  max-width: functions.to-rem(824);
+}
+.decorTitle {
+  line-height: 1.3;
+  font-size: functions.to-rem(18);
+  font-weight: 500;
+}
+
+.title {
+  margin-bottom: functions.to-rem(32);
+}
+
+.subtitle {
+  max-width: functions.to-rem(322);
+  margin: auto;
+  font-weight: inherit;
+  margin-bottom: functions.to-rem(48);
+}
+
+.play {
+  cursor: pointer;
+}

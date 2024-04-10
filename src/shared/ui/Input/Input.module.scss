@@ -1,0 +1,22 @@
+@use '../../../app/styles/helpers/functions.scss';
+@use '../../../app/styles/helpers/variables.scss';
+
+.lableText {
+  display: block;
+  margin-bottom: functions.to-rem(8);
+  font-weight: 500;
+}
+
+.input {
+  padding: functions.to-rem(9) functions.to-rem(16);
+  background-color: variables.$white;
+  border: functions.to-rem(1) solid variables.$grey;
+  border-radius: functions.to-rem(14);
+  width: 100%;
+
+  &::placeholder {
+    color: variables.$grey !important;
+    opacity: 0.5;
+    font-size: functions.to-rem(16);
+  }
+}

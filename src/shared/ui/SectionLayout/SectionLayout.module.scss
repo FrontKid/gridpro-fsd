@@ -1,0 +1,5 @@
+@use '../../../app/styles/helpers/variables.scss';
+
+.default {
+  background-color: variables.$primary;
+}

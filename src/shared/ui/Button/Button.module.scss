@@ -1,0 +1,33 @@
+@use '../../../app/styles/helpers/functions.scss';
+@use '../../../app/styles/helpers/variables.scss';
+
+.general {
+  padding: functions.to-rem(8) functions.to-rem(16);
+  font-size: functions.to-rem(18);
+  border-radius: functions.to-rem(14);
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: functions.to-rem(0.5);
+}
+
+.button {
+  border: transparent;
+  cursor: pointer;
+}
+
+.link {
+  text-align: center;
+}
+
+.white {
+  background-color: variables.$white;
+  color: variables.$blue;
+}
+
+.blue {
+  background-color: variables.$blue;
+  color: variables.$white;
+}

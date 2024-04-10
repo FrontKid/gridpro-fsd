@@ -1,0 +1,18 @@
+@use '../../../app/styles/helpers/functions.scss';
+@use '../../../app/styles/helpers/variables.scss';
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  column-gap: functions.to-rem(60);
+
+  background-color: variables.$secondary;
+  border-radius: functions.to-rem(40);
+  border: functions.to-rem(1) solid variables.$white-grey;
+
+  padding: functions.to-rem(40) functions.to-rem(106);
+}
+
+.column {
+  flex-direction: column;
+}

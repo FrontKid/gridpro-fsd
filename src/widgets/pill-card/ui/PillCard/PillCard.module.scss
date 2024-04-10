@@ -1,0 +1,36 @@
+@use '../../../../app/styles/helpers/functions.scss';
+@use '../../../../app/styles/helpers/variables.scss';
+
+.card {
+  max-width: functions.to-rem(505);
+  border-radius: functions.to-rem(24);
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  display: block;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title,
+.subTitle {
+  color: variables.$white;
+}
+
+.title {
+  font-size: functions.to-rem(28);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.isActive {
+  filter: grayscale(100%);
+}

@@ -1,0 +1,15 @@
+@use '../../../../../app/styles/helpers/functions.scss';
+@use '../../../../../app/styles/helpers/variables.scss';
+
+.button {
+  cursor: pointer;
+  position: absolute;
+  bottom: -2px;
+  text-align: center;
+  width: calc(100%);
+  background-color: #ffffff;
+  padding: functions.to-rem(16) 0;
+  border: 2px solid variables.$blue-md;
+  border-bottom-left-radius: functions.to-rem(24);
+  border-bottom-right-radius: functions.to-rem(24);
+}

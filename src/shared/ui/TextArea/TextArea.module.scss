@@ -1,0 +1,16 @@
+@use '../../../app/styles/helpers/functions.scss';
+@use '../../../app/styles/helpers/variables.scss';
+
+.textarea {
+  border-radius: functions.to-rem(14);
+  border: functions.to-rem(1) solid variables.$grey;
+  background-color: variables.$white;
+  padding: functions.to-rem(8) functions.to-rem(16);
+  width: 100%;
+  resize: none;
+  min-height: functions.to-rem(80);
+
+  &::placeholder {
+    color: variables.$grey;
+  }
+}

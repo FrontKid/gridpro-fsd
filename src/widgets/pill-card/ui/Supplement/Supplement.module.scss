@@ -1,0 +1,32 @@
+@use '../../../../app/styles/helpers/functions.scss';
+@use '../../../../app/styles/helpers/variables.scss';
+
+.form {
+  margin-top: functions.to-rem(120);
+}
+
+.content {
+  max-width: functions.to-rem(540);
+  margin: auto;
+  width: 100%;
+  position: relative;
+  padding-bottom: functions.to-rem(65);
+}
+
+.questionInner {
+  &:not(:last-child) {
+    margin-bottom: functions.to-rem(32);
+  }
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: functions.to-rem(160);
+}
+
+.title {
+  font-weight: 500;
+  margin-bottom: functions.to-rem(8);
+}
