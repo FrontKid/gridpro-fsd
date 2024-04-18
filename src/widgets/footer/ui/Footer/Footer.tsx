@@ -5,6 +5,10 @@ import { Logo } from '@/shared/ui/Logo';
 import css from './Footer.module.scss';
 import { NavBar } from '@/shared/ui/NavBar';
 
+const handleScrollTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const Footer = () => {
   return (
     <SectionLayout className={css.footer} type="colored" tag="footer">
@@ -18,7 +22,7 @@ const Footer = () => {
 
         <div>
           <h4 className={css.listTitle}>Site map</h4>
-          <NavBar flow="column" />
+          <NavBar onClick={handleScrollTop} flow="column" />
         </div>
 
         <div>
@@ -32,7 +36,9 @@ const Footer = () => {
               <Link to="/terms">Terms</Link>
             </li>
             <li>
-              <Link to="/privacy">Privacy</Link>
+              <Link onClick={handleScrollTop} to="/privacy">
+                Privacy
+              </Link>
             </li>
           </ul>
         </div>

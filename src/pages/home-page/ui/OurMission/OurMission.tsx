@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import cn from 'classnames';
 
 // eslint-disable-next-line import/no-absolute-path
@@ -8,13 +7,10 @@ import image2 from '/images/our-mission-2.png';
 
 import css from './OurMission.module.scss';
 
-type TOurMissionProps = object;
-
-const OurMission: FC<TOurMissionProps> = () => {
+const OurMission = () => {
   return (
     <div className={css.content}>
       <h2 className={cn('title2', css.title)}>Our Mission</h2>
-
       <p className={css.text}>
         At ProGridX, our mission is simple: to provide homeowners and general
         contractors with reliable and efficient property inspection and repair
@@ -24,7 +20,6 @@ const OurMission: FC<TOurMissionProps> = () => {
         With our dedication to excellence and customer satisfaction, we aim to
         be your trusted partner in property maintenance and improvement .
       </p>
-
       <div className={css.imageInner}>
         <img src={image1} alt="our mission" />
         <img src={image2} alt="our mission" />

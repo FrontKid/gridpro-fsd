@@ -1,0 +1,15 @@
+@use '../../../../app/styles/helpers/functions.scss';
+@use '../../../../app/styles/helpers/variables.scss';
+
+.SectionTitle {
+  padding: functions.to-rem(120) 0;
+}
+
+.pageSection {
+  padding-bottom: functions.to-rem(120);
+  font-size: functions.to-rem(24);
+
+  h2 {
+    margin-bottom: functions.to-rem(30);
+  }
+}

@@ -10,20 +10,27 @@ type TFlow = 'column' | 'row';
 
 type TNavBar = {
   flow?: TFlow;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 };
 
-const NavBar: FC<TNavBar> = ({ flow = 'row' }) => (
+const NavBar: FC<TNavBar> = ({ flow = 'row', onClick }) => (
   <nav className={css.nav}>
     <ul className={cn(css.list, css[flow])}>
       <li className={css.item}>
-        <Link className={css.link} to="/">
+        <Link onClick={onClick} className={css.link} to="/">
           Home
         </Link>
       </li>
       <li className={css.item}>
-        <Link className={css.link} to="/about">
+        <ScrollLink
+          smooth
+          offset={100}
+          duration={500}
+          className={css.link}
+          to="ourMission"
+        >
           About
-        </Link>
+        </ScrollLink>
       </li>
       <li className={css.item}>
         <ScrollLink
