@@ -23,7 +23,7 @@ const Condition: FC<TConditionProps> = () => {
           From thorough exterior inspections to detailed interior assessments,
           we handle every aspect of your property with precision and care. Our
           detailed reports and expert recommendations empower you to make
-          informed decisions about your property&aposs maintenance and
+          informed decisions about your property&apos;s maintenance and
           improvement needs.
         </p>
 

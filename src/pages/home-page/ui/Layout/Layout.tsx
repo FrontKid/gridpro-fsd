@@ -16,13 +16,17 @@ const Layout: FC<TLayoutProps> = props => (
     <SectionLayout className={css.hero} type="colored">
       {props.hero}
     </SectionLayout>
-    <SectionLayout className={css.service} type="transparent">
+    <SectionLayout id="services" className={css.service} type="transparent">
       {props.services}
     </SectionLayout>
     <SectionLayout className={css.condition} type="transparent">
       {props.condition}
     </SectionLayout>
-    <SectionLayout className={css.ourMission} type="transparent">
+    <SectionLayout
+      id="ourMission"
+      className={css.ourMission}
+      type="transparent"
+    >
       {props.ourMission}
     </SectionLayout>
     <SectionLayout className={css.contactUs} type="transparent">

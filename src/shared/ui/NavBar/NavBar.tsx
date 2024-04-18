@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+
 import cn from 'classnames';
 
 import css from './NavBar.module.scss';
@@ -24,9 +26,15 @@ const NavBar: FC<TNavBar> = ({ flow = 'row' }) => (
         </Link>
       </li>
       <li className={css.item}>
-        <Link className={css.link} to="/services">
+        <ScrollLink
+          smooth
+          offset={100}
+          duration={500}
+          className={css.link}
+          to="services"
+        >
           Services
-        </Link>
+        </ScrollLink>
       </li>
     </ul>
   </nav>

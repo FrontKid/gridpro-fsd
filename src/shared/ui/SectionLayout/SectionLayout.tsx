@@ -13,6 +13,7 @@ type TSectionLayoutProps = {
   className?: string;
   tag?: TTag;
   children?: ReactNode;
+  id?: string;
 };
 
 const SectionLayout: FC<TSectionLayoutProps> = ({
@@ -20,6 +21,7 @@ const SectionLayout: FC<TSectionLayoutProps> = ({
   tag = 'section',
   className,
   children,
+  id = '',
   color = 'default',
 }) => {
   const coloredSectionType = {
@@ -44,7 +46,9 @@ const SectionLayout: FC<TSectionLayoutProps> = ({
     footer: <footer className={cn(className, 'container')}>{children}</footer>,
     header: <header className={cn(className, 'container')}>{children}</header>,
     section: (
-      <section className={cn(className, 'container')}>{children}</section>
+      <section id={id} className={cn(className, 'container')}>
+        {children}
+      </section>
     ),
   };
 

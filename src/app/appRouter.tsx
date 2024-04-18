@@ -15,19 +15,15 @@ const routes: RouteObject[] = [
       },
       {
         path: 'about',
-        element: <h1>Comming soon...</h1>,
-      },
-      {
-        path: 'services',
-        element: <h1>Comming soon...</h1>,
+        element: <h1>Coming soon...</h1>,
       },
       {
         path: 'terms',
-        element: <h1>Comming soon...</h1>,
+        element: <h1>Coming soon...</h1>,
       },
       {
         path: 'privacy',
-        element: <h1>Comming soon...</h1>,
+        element: <h1>Coming soon...</h1>,
       },
       {
         path: '*',
