@@ -2,25 +2,32 @@
 @use '../../../../app/styles/helpers/variables.scss';
 
 .content {
+  display: flex;
+  justify-content: space-between;
+  gap: functions.to-rem(25);
+  color: variables.$white;
+}
+
+.titleInner {
+  max-width: functions.to-rem(410);
 }
 
 .title {
-  text-align: center;
-  margin-bottom: functions.to-rem(32);
+  margin-bottom: functions.to-rem(23);
 }
 
 .text {
-  font-size: functions.to-rem(24);
-  margin-bottom: functions.to-rem(40);
+  color: variables.$white-grey;
+  margin-bottom: functions.to-rem(14);
 }
 
-.imageInner {
-  display: flex;
-  justify-content: space-between;
+.cardInner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: functions.to-rem(80) functions.to-rem(24);
+}
 
-  img {
-    width: 100%;
-    display: block;
-    max-width: functions.to-rem(611);
-  }
+.card-1 {
+  grid-column: 2 / -1;
 }

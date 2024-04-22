@@ -16,7 +16,12 @@ const Layout: FC<TLayoutProps> = props => (
     <SectionLayout className={css.hero} type="colored">
       {props.hero}
     </SectionLayout>
-    <SectionLayout id="services" className={css.service} type="transparent">
+    <SectionLayout
+      id="services"
+      className={css.service}
+      type="colored"
+      color="blue"
+    >
       {props.services}
     </SectionLayout>
     <SectionLayout className={css.condition} type="transparent">
@@ -25,7 +30,8 @@ const Layout: FC<TLayoutProps> = props => (
     <SectionLayout
       id="ourMission"
       className={css.ourMission}
-      type="transparent"
+      type="colored"
+      color="blue"
     >
       {props.ourMission}
     </SectionLayout>

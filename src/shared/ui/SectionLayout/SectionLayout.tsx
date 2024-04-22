@@ -4,7 +4,7 @@ import cn from 'classnames';
 import css from './SectionLayout.module.scss';
 
 type TSectionType = 'colored' | 'transparent';
-type TSectionColor = 'default' | 'transparent';
+type TSectionColor = 'default' | 'transparent' | 'blue';
 type TTag = 'section' | 'header' | 'footer';
 
 type TSectionLayoutProps = {
@@ -26,17 +26,17 @@ const SectionLayout: FC<TSectionLayoutProps> = ({
 }) => {
   const coloredSectionType = {
     footer: (
-      <footer className={cn(className, css[color])}>
+      <footer id={id} className={cn(className, css[color])}>
         <div className="container">{children}</div>
       </footer>
     ),
     header: (
-      <header className={cn(className, css[color])}>
+      <header id={id} className={cn(className, css[color])}>
         <div className="container">{children}</div>
       </header>
     ),
     section: (
-      <section className={cn(className, css[color])}>
+      <section id={id} className={cn(className, css[color])}>
         <div className="container">{children}</div>
       </section>
     ),

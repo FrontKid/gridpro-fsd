@@ -7,14 +7,21 @@ import css from './ServiceCard.module.scss';
 type TServiceCardProps = {
   data: ICardData;
   className?: string;
+  count: number;
 };
 
-const ServiceCard: FC<TServiceCardProps> = ({ data, className = '' }) => {
+const ServiceCard: FC<TServiceCardProps> = ({
+  data,
+  className = '',
+  count,
+}) => {
   return (
     <article className={cn(css.card, className)}>
       <h3 className={css.title}>{data.title}</h3>
-      <p className={css.text}>{data.text}</p>
-      <img className={css.image} src={data.image.src} alt={data.image.alt} />
+      <div className={css.counterInner}>
+        <p className={css.text}>{data.text}</p>
+        <div className={css.count}>{count}</div>
+      </div>
     </article>
   );
 };

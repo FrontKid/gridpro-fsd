@@ -22,24 +22,12 @@ const NavBar: FC<TNavBar> = ({ flow = 'row', onClick }) => (
         </Link>
       </li>
       <li className={css.item}>
-        <ScrollLink
-          smooth
-          offset={100}
-          duration={500}
-          className={css.link}
-          to="ourMission"
-        >
+        <ScrollLink smooth duration={500} className={css.link} to="ourMission">
           About
         </ScrollLink>
       </li>
       <li className={css.item}>
-        <ScrollLink
-          smooth
-          offset={100}
-          duration={500}
-          className={css.link}
-          to="services"
-        >
+        <ScrollLink smooth duration={500} className={css.link} to="services">
           Services
         </ScrollLink>
       </li>

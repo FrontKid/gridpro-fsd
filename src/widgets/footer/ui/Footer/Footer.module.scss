@@ -2,7 +2,7 @@
 @use '../../../../app/styles/helpers/variables.scss';
 
 .footer {
-  padding-block: functions.to-rem(120);
+  padding-block: functions.to-rem(60);
   color: variables.$white;
   font-size: functions.to-rem(18);
 }
@@ -15,7 +15,6 @@
 
 .logo {
   display: block;
-  margin-bottom: functions.to-rem(140);
 }
 
 .listTitle {
@@ -31,4 +30,8 @@
 
 .link {
   cursor: pointer;
+}
+
+.copyright {
+  color: variables.$white-grey;
 }

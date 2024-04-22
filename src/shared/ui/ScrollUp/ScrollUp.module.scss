@@ -1,0 +1,35 @@
+@use '../../../app/styles/helpers/variables.scss';
+@use '../../../app/styles/helpers/functions.scss';
+
+.scrollUp {
+  position: fixed;
+  right: functions.to-rem(20);
+  bottom: -20%;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  background-color: variables.$black;
+  opacity: 0.6;
+  padding: functions.to-rem(8) functions.to-rem(10);
+  border-radius: functions.to-rem(6);
+  z-index: 100;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  &:hover {
+    background-color: variables.$black;
+  }
+}
+
+.scrollIcon {
+  font-size: functions.to-rem(24);
+  color: variables.$white-grey;
+}
+
+.showScroll {
+  bottom: functions.to-rem(49);
+}
+
+.scrollUpArrow {
+  width: functions.to-rem(24);
+  height: functions.to-rem(24);
+}

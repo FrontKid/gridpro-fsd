@@ -2,28 +2,46 @@
 @use '../../../../../../app/styles/helpers/variables.scss';
 
 .card {
-  background-color: variables.$blue-md;
-  max-width: functions.to-rem(400);
-  min-height: functions.to-rem(256);
-  padding: functions.to-rem(48) functions.to-rem(24) functions.to-rem(24)
-    functions.to-rem(24);
-  border-radius: functions.to-rem(24);
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: functions.to-rem(20);
+  padding: functions.to-rem(20) 0;
   position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: functions.to-rem(-1);
+
+    background-color: variables.$white;
+    height: functions.to-rem(1);
+  }
+}
+
+.counterInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: functions.to-rem(40);
+  flex-grow: 1;
+  max-width: functions.to-rem(627);
 }
 
 .title {
   font-size: functions.to-rem(28);
   line-height: 1.2;
+  width: functions.to-rem(193);
 }
 
 .text {
   color: variables.$secondary;
 }
 
-.image {
-  position: absolute;
-  top: functions.to-rem(24);
-  right: functions.to-rem(24);
-  width: functions.to-rem(40);
+.count {
+  padding: functions.to-rem(12) functions.to-rem(37);
+  border-radius: functions.to-rem(16);
+  border: functions.to-rem(1) solid variables.$white;
 }

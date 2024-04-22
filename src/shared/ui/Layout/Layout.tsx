@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react';
 import { Outlet } from 'react-router-dom';
+import { ScrollUp } from '../ScrollUp';
 
 type TLayoutProps = {
   header: ReactNode;
@@ -14,6 +15,8 @@ const Layout: FC<TLayoutProps> = props => {
         <Outlet />
       </main>
       {props.footer}
+
+      <ScrollUp />
     </>
   );
 };

@@ -1,0 +1,33 @@
+@use '../../../../../app/styles/helpers/functions.scss';
+@use '../../../../../app/styles/helpers/variables.scss';
+
+.card {
+  border-radius: functions.to-rem(32);
+  padding: functions.to-rem(48) functions.to-rem(24);
+  box-shadow: 0 functions.to-rem(4) functions.to-rem(4) 0 rgba(0, 0, 0, 0.25);
+  background-color: variables.$white;
+  color: variables.$primary;
+
+  position: relative;
+}
+
+.title {
+  margin-bottom: functions.to-rem(32);
+  font-size: functions.to-rem(28);
+  color: variables.$black;
+}
+
+.iconInner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: functions.to-rem(16);
+  padding: functions.to-rem(8) functions.to-rem(16);
+  border: functions.to-rem(1) solid variables.$white-grey;
+  background-color: variables.$white;
+}
+
+.icon {
+  display: block;
+}
